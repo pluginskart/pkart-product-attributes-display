@@ -1,0 +1,11 @@
+.wp-block-pluginskart-product-attribute-display {
+	color: var( --wp--preset--color--charcoal, #888 );
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.wp-block-pluginskart-product-attribute-display__prefix,
+.wp-block-pluginskart-product-attribute-display__value,
+.wp-block-pluginskart-product-attribute-display__suffix {
+	display: inline;
+}

@@ -1,0 +1,14 @@
+{
+	"name": "woocommerce-product-attribute-display",
+	"version": "1.0.0",
+	"description": "WooCommerce Product Attribute Display block plugin.",
+	"author": "PluginsKart",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.0.0"
+	}
+}

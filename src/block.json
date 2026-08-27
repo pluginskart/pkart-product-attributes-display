@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pluginskart/product-attribute-display",
+	"version": "1.0.0",
+	"title": "Product Attribute Display",
+	"category": "woocommerce-product-elements",
+	"icon": "tag",
+	"description": "Displays a selected WooCommerce product attribute inside a product block.",
+	"keywords": [
+		"product",
+		"attribute",
+		"attributes",
+		"woocommerce",
+		"display"
+	],
+	"textdomain": "woocommerce-product-attribute-display",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"supports": {
+		"html": false
+	},
+	"usesContext": [
+		"postId",
+		"query",
+		"queryId"
+	],
+	"attributes": {
+		"attributeSlug": {
+			"type": "string",
+			"default": ""
+		},
+		"attributeName": {
+			"type": "string",
+			"default": ""
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"suffix": {
+			"type": "string",
+			"default": ""
+		}
+	}
+}
