@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "pluginskart/product-attribute-display",
+  "name": "pkart/product-attribute-display",
   "version": "1.0.0",
   "title": "Product Attribute Display",
   "category": "woocommerce-product-elements",
@@ -14,7 +14,7 @@
     "woocommerce",
     "display"
   ],
-  "textdomain": "woocommerce-product-attribute-display",
+  "textdomain": "product-attribute-display",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
