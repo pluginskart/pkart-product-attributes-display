@@ -1,4 +1,4 @@
-=== Product Attribute Display ===
+=== ShopAttributes ===
 Contributors: pkart
 Tags: woocommerce, product, product attributes, attributes, product blocks
 Requires at least: 6.5
@@ -12,7 +12,7 @@ Displays selected WooCommerce product attributes inside product blocks.
 
 == Description ==
 
-Product Attribute Display allows you to display WooCommerce product attributes inside WooCommerce product blocks.
+ShopAttributes allows you to display WooCommerce product attributes inside WooCommerce product blocks.
 
 The block can display selected product attributes such as size, color, material, thickness, width, length, and other custom WooCommerce attributes.
 
@@ -33,10 +33,10 @@ The block can display selected product attributes such as size, color, material,
 
 == Installation ==
 
-1. Upload the `product-attribute-display` folder to the `/wp-content/plugins/` directory.
+1. Upload the `shop-attributes` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the `Plugins` screen in WordPress.
 3. Make sure WooCommerce is installed and activated.
-4. Add the Product Attribute Display block inside a WooCommerce product block.
+4. Add the ShopAttributes block inside a WooCommerce product block.
 5. Select the product attribute you want to display.
 
 == Frequently Asked Questions ==

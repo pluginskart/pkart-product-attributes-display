@@ -2,13 +2,13 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function Edit() {
 	const blockProps = useBlockProps( {
-		className: 'product-attribute-display',
+		className: 'shop-attributes',
 	} );
 
 	return (
-		<p { ...blockProps } aria-label="Product attribute">
-			<span className="product-attribute-display__placeholder">
-				Product Attribute
+		<p { ...blockProps } aria-label="ShopAttributes">
+			<span className="shop-attributes__placeholder">
+				ShopAttributes
 			</span>
 		</p>
 	);

@@ -1,7 +1,7 @@
 {
-	"name": "product-attribute-display",
+	"name": "shop-attributes",
 	"version": "1.0.0",
-	"description": "WooCommerce Product Attribute Display block plugin.",
+	"description": "WooCommerce ShopAttributes block plugin.",
 	"author": "PluginsKart",
 	"license": "GPL-2.0-or-later",
 	"scripts": {

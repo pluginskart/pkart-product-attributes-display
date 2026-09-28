@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "pkart/product-attribute-display",
+  "name": "pkart/shop-attributes",
   "version": "1.0.0",
-  "title": "Product Attribute Display",
+  "title": "ShopAttributes",
   "category": "woocommerce-product-elements",
   "icon": "tag",
   "description": "Displays a selected WooCommerce product attribute inside a product block.",
@@ -14,7 +14,7 @@
     "woocommerce",
     "display"
   ],
-  "textdomain": "product-attribute-display",
+  "textdomain": "shop-attributes",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

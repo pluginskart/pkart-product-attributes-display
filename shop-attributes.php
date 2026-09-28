@@ -1,17 +1,16 @@
 <?php
 /**
- * Plugin Name: Product Attribute Display
- * Description: Displays WooCommerce product attributes inside product blocks.
- * Version: 1.0.0
- * Author: PKart
- * Author URI: https://pluginskart.com
- * License: GPL-2.0-or-later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: product-attribute-display
+ * Plugin Name:       ShopAttributes
+ * Description:       Displays WooCommerce product attributes inside product blocks.
+ * Version:           1.0.0
+ * Author:            PKart
+ * Author URI:        https://pluginskart.com
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       shop-attributes
  *
- * @package Pkart\ProductAttributeDisplay
+ * @package Pkart\ShopAttributes
  */
-
 
 namespace Pkart;
 
@@ -20,9 +19,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Product Attribute Display.
+ * Shop Attributes.
  */
-class Product_Attribute_Display {
+class Shop_Attributes {
 
 	/**
 	 * Render the product attribute display block.
@@ -102,13 +101,13 @@ class Product_Attribute_Display {
 		$pkart_output = "<p $pkart_wrapper_attributes>";
 
 		if ( $pkart_prefix ) {
-			$pkart_output .= '<span class="wp-block-pkart-product-attribute-display__prefix">' . esc_html( $pkart_prefix ) . '</span>';
+			$pkart_output .= '<span class="wp-block-pkart-shop-attributes__prefix">' . esc_html( $pkart_prefix ) . '</span>';
 		}
 
-		$pkart_output .= '<span class="wp-block-pkart-product-attribute-display__value">' . esc_html( $pkart_value ) . '</span>';
+		$pkart_output .= '<span class="wp-block-pkart-shop-attributes__value">' . esc_html( $pkart_value ) . '</span>';
 
 		if ( $pkart_suffix ) {
-			$pkart_output .= '<span class="wp-block-pkart-product-attribute-display__suffix">' . esc_html( $pkart_suffix ) . '</span>';
+			$pkart_output .= '<span class="wp-block-pkart-shop-attributes__suffix">' . esc_html( $pkart_suffix ) . '</span>';
 		}
 
 		$pkart_output .= '</p>';
@@ -143,7 +142,7 @@ class Product_Attribute_Display {
 				'title'       => $pkart_name,
 				'description' => sprintf(
 					/* translators: %s: attribute label */
-					__( 'Display assigned attribute from the attribute: %s', 'product-attribute-display' ),
+					__( 'Display assigned attribute from the attribute: %s', 'shop-attributes' ),
 					$pkart_name
 				),
 				'attributes'  => array(
@@ -183,5 +182,5 @@ class Product_Attribute_Display {
 
 add_action(
 	'init',
-	array( 'Pkart\Product_Attribute_Display', 'register_block' )
+	array( 'Pkart\Shop_Attributes', 'register_block' )
 );
