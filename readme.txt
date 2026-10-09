@@ -1,4 +1,4 @@
-=== ShopAttributes ===
+=== PKart Product Attributes Display ===
 Contributors: pkart
 Tags: woocommerce, product attributes, attributes, blocks, product block
 Requires at least: 6.5
@@ -8,42 +8,38 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Show any WooCommerce product attribute, such as color, size or material, inside product blocks and the Product Collection block.
+Display WooCommerce product attributes such as color, size, and material inside product blocks and the Product Collection block.
 
 == Description ==
 
-ShopAttributes adds a block that displays a single WooCommerce product attribute for the current product. Place it inside a Product Collection block, a product template or a single product template, and it shows the attribute values assigned to each product.
+PKart Product Attributes Display adds a block that displays a single WooCommerce product attribute for the current product. Place it inside a Product Collection block, a product template, or a single product template to display the attribute values assigned to each product.
 
-Every global attribute you create under **Products → Attributes** appears in the block inserter as its own block variation, so you can add "Color", "Size" or "Material" in one click. Custom (product-level) attributes are supported too: enter the attribute name in the block settings.
+Global attributes created under Products → Attributes are automatically available as block variations. Custom product-level attributes are supported through the block settings.
 
 = Features =
 
-* One block variation for each global WooCommerce attribute, detected automatically.
-* Supports global (taxonomy) and custom product attributes.
-* Multiple values are shown as a comma-separated list.
-* Optional prefix and suffix text, for example "Color: " or " cm".
-* Renders nothing when the product does not have the attribute, so there are no empty labels.
-* Lightweight: no settings page, no database tables and no front-end JavaScript.
+* Automatically creates a block variation for each global WooCommerce attribute.
+* Supports global taxonomy attributes and custom product attributes.
+* Displays multiple values as a comma-separated list.
+* Supports optional prefix and suffix text, such as "Color: " or " cm".
+* Renders nothing when the selected product has no value for the attribute.
+* Lightweight implementation with no settings page, database tables, or front-end JavaScript.
 
 = Requirements =
 
 * WordPress 6.5 or later
-* WooCommerce (active)
+* WooCommerce 8.0 or later
 * PHP 7.4 or later
 
-= Source code =
+= Installation =
 
-The plugin's JavaScript is compiled with `@wordpress/scripts`. The uncompiled source is included in the `src` folder of the plugin. To build it yourself, run `npm install` and then `npm run build`.
+1. Upload the pkart-product-attributes-display folder to /wp-content/plugins/, or upload the plugin ZIP through Plugins → Add New Plugin → Upload Plugin.
+2. Activate WooCommerce and PKart Product Attributes Display.
+3. Open a template containing a Product Collection block or a single product template in the Site Editor.
+4. Insert the desired attribute block variation inside the product template.
+5. Configure the Attribute slug, Prefix, and Suffix in the block settings if needed.
 
-== Installation ==
-
-1. In your WordPress admin, go to **Plugins → Add New**, search for "ShopAttributes", and click **Install Now**. Alternatively, upload the `shop-attributes` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin from the **Plugins** screen. WooCommerce must be installed and active.
-3. Open a template or page that contains a Product Collection block (or a single product template) in the Site Editor.
-4. Inside the product template, add the block for the attribute you want to show, for example "Color".
-5. Optionally, set a prefix or suffix in the block settings sidebar.
-
-== Frequently Asked Questions ==
+= Frequently Asked Questions =
 
 = Does this plugin require WooCommerce? =
 
@@ -51,27 +47,27 @@ Yes. WooCommerce must be installed and active.
 
 = Where can I use the block? =
 
-Use it anywhere a product is available as context: inside the Product Collection block's product template and in single product templates. Outside a product context the block renders nothing.
+Use it wherever a product is available as block context, including Product Collection templates and single product templates. Outside a product context, the block renders nothing.
 
 = Why don't I see my attribute in the inserter? =
 
-Block variations are created for global attributes only (**Products → Attributes**). For a custom attribute that is defined on an individual product, insert any ShopAttributes variation and change the **Attribute slug** in the block settings to the attribute's name, for example `material`.
+Global attributes are created under Products → Attributes. Create the attribute there to make it available as a block variation. For custom product attributes, insert a ShopAttributes block and configure its Attribute slug.
 
 = What should I enter as the attribute slug? =
 
-For global attributes, use the taxonomy name with the `pa_` prefix, for example `pa_color`. For custom attributes, use the attribute name in lowercase with spaces replaced by hyphens, for example `fabric-type`.
+For global attributes, use the taxonomy name with the pa_ prefix, such as pa_color. For custom attributes, use the attribute name in lowercase with spaces replaced by hyphens, such as fabric-type.
 
 = Why is the block empty on some products? =
 
-The block only outputs content when the current product has a value for the selected attribute.
+The block outputs content only when the current product has a value for the selected attribute.
 
 = Can I style the output? =
 
-Yes. The block outputs a paragraph with the class `wp-block-pkart-shop-attributes` plus the attribute slug, and the prefix, value and suffix are wrapped in `wp-block-pkart-shop-attributes__prefix`, `__value` and `__suffix` spans.
+Yes. The output uses the wp-block-pkart-shop-attributes block wrapper class for compatibility, along with the selected attribute slug. Prefix, value, and suffix use dedicated child classes.
 
 = Is the plugin compatible with WooCommerce HPOS? =
 
-Yes. The plugin does not read or write orders, and it declares compatibility with High-Performance Order Storage and the Cart and Checkout blocks.
+The plugin declares compatibility with High-Performance Order Storage and Cart and Checkout blocks. It does not read or write orders.
 
 == Changelog ==
 

@@ -1,7 +1,7 @@
 {
-	"name": "shop-attributes",
+	"name": "pkart-product-attributes-display",
 	"version": "1.0.0",
-	"description": "WooCommerce ShopAttributes block plugin.",
+	"description": "WooCommerce product attribute display block plugin.",
 	"author": "PKart",
 	"license": "GPL-2.0-or-later",
 	"scripts": {
@@ -18,7 +18,7 @@
 		"build",
 		"includes",
 		"src",
-		"shop-attributes.php",
+		"pkart-product-attributes-display.php",
 		"readme.txt"
 	]
 }

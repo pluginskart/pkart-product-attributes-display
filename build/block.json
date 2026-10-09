@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "pkart/shop-attributes",
   "version": "1.0.0",
-  "title": "ShopAttributes",
+  "title": "PKart Product Attributes Display",
   "category": "woocommerce-product-elements",
   "icon": "tag",
   "description": "Displays a selected WooCommerce product attribute inside a product block.",
@@ -14,7 +14,7 @@
     "woocommerce",
     "display"
   ],
-  "textdomain": "shop-attributes",
+  "textdomain": "pkart-product-attributes-display",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
