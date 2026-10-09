@@ -1,5 +1,5 @@
 === PKart Product Attributes Display ===
-Contributors: pkart
+Contributors: Pluginskart
 Tags: woocommerce, product attributes, attributes, blocks, product block
 Requires at least: 6.5
 Tested up to: 7.1
