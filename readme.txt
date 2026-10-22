@@ -126,6 +126,12 @@ Yes. All strings use the `pkart-product-attributes-display` text domain.
 2. Each global attribute is available as its own block in the Site Editor, with Attribute slug, Prefix, and Suffix settings in the sidebar.
 3. Attributes are managed in the standard WooCommerce product data panel. Both global and custom attributes are supported.
 
+== Screenshots ==
+
+1. Block variations for each global WooCommerce attribute in the Site Editor, with Attribute slug, Prefix, and Suffix settings in the block sidebar.
+2. Product attribute values on the front end, displayed as comma-separated lists with prefix and suffix text.
+3. Global and custom attributes assigned to a product in the WooCommerce Attributes tab, ready to be displayed by the blocks.
+
 == Changelog ==
 
 = 1.0.0 =
